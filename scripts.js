@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", e => {
   $form.addEventListener("submit", e => {
     e.preventDefault();
     let pokemonName = e.target.querySelector('[name="name"]').value;
-    findOnePokemon(pokemonName);
+    findOnePokemon(pokemonName.toLowerCase());
     e.target.querySelector('[name="name"]').value = ""
     
   })
