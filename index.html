@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuarta página de prueba hecha por Brian">
+  <meta name="keywords" content="Brian, practica4">
+  <link rel="icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./main.css">
+  <title>Website práctica 4</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">API Pokémons</h1>
+  </header>
+  <main>
+
+    <form class="form">
+      <input type="text" class="form__input" name="name" id="name" placeholder="Busca un pokemon" autocomplete="off" required>
+      <input type="submit" class="form__submit" value="Buscar">
+    </form>
+
+    <div class="pokemon-target none">
+      <figure>
+        <figcaption class="pokemon-target__name"></figcaption>
+        <img class="pokemon-target__img" src="" alt="">
+      </figure>
+      <p class="pokemon-target__title"></p>
+      <br>
+      <div class="pokemon-target__abilities">
+      </div>
+    </div>
+
+    <template class="template-abilities">
+      <p class="pokemon-target__ability"></p>
+      <span class="pokemon-target__description"></span>
+      <br><br>
+    </template>
+
+    <img class="loader none" src="./assets/img/spinning-circles.svg" alt="cargando..">
+
+    <div class="pokemons">
+
+    </div>
+
+    <template id="template-pokemon">
+      <figure class="pokemons__poke">
+        <figcaption class="pokemons__name" ></figcaption>
+        <img class="pokemons__img" src="" alt="">
+      </figure>
+    </template>
+
+    <div class="buttons">
+      <button class="buttons__previous" data-previous>⬅️</button>
+      <button class="buttons__next" data-next>➡️</button>
+    </div>
+
+  </main>
+  <footer>
+    <p class="footer__title">Otras páginas: </p>
+    <ul class="footer__list">
+      <li class="footer__item"><a class="footer__link" href="https://briweb.github.io/BrianWebsite-practica1/" target="_blanck" rel="noopener">Práctica 1</a></li>
+      <li class="footer__item"><a class="footer__link" href="https://briweb.github.io/BrianWebsite-practica2/" target="_blanck" rel="noopener">Práctica 2</a></li>
+      <li class="footer__item"><a class="footer__link" href="https://briweb.github.io/BrianWebsite-practica3/" target="_blanck" rel="noopener">Práctica 3</a></li>
+    </ul>
+  </footer>
+  <script src="./scripts.js" type="module"></script>
+</body>
+</html>
